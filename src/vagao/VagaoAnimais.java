@@ -30,7 +30,7 @@ public class VagaoAnimais extends Vagao {
 		if (validarCapacidade()) return false;
 
 		animais.add(animal);
-		System.out.println("Animal " + animal.getNome() + " (" + animal.getEspecie() + ") embarcou no vagão #" + getNumero());
+		System.out.println("Animal " + animal.getNome() + " (" + animal.getEspecie() + ") embarcou no vagão " + getNumero());
 		return true;
 	}
 
@@ -42,7 +42,7 @@ public class VagaoAnimais extends Vagao {
 		Animal animal = (Animal) item;
 		boolean removido = animais.remove(animal);
 		if (removido) {
-			System.out.println("Animal " + animal.getNome() + " desembarcou do vagão #" + getNumero());
+			System.out.println("Animal " + animal.getNome() + " desembarcou do vagão" + getNumero());
 		} else {
 			System.out.println("Animal não encontrado no vagão #" + getNumero());
 		}
@@ -64,7 +64,7 @@ public class VagaoAnimais extends Vagao {
 	// Listar: exibe todos os animais embarcados
 	@Override
 	public void listarConteudo() {
-		System.out.println("--- Vagão de Animais #" + getNumero() + " ---");
+		System.out.println("--- Vagão de Animais" + getNumero() + " ---");
 		if (animais.isEmpty()) {
 			System.out.println("Nenhum animal embarcado.");
 			return;

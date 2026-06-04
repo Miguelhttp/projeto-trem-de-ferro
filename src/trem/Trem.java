@@ -25,7 +25,7 @@ public class Trem {
 		if (validarCapacidade()) return false;
 
 		vagoes.add(vagao);
-		System.out.println("Vagão #" + vagao.getNumero() + " adicionado à composição.");
+		System.out.println("Vagão" + vagao.getNumero() + " adicionado à composição.");
 		return true;
 	}
 
@@ -34,7 +34,7 @@ public class Trem {
 		if (!validarIndice(indice)) return false;
 
 		Vagao removido = vagoes.remove(indice);
-		System.out.println("Vagão #" + removido.getNumero() + " removido da composição.");
+		System.out.println("Vagão" + removido.getNumero() + " removido da composição.");
 		return true;
 	}
 

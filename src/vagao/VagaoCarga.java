@@ -33,7 +33,7 @@ public class VagaoCarga extends Vagao {
 
 		cargas.add(carga);
 		pesoAtual += carga.getPeso();
-		System.out.println("Carga " + carga.getDescricao() + " (" + carga.getPeso() + "kg) embarcada no vagão #" + getNumero());
+		System.out.println("Carga " + carga.getDescricao() + " (" + carga.getPeso() + "kg) embarcada no vagão" + getNumero());
 		return true;
 	}
 
@@ -46,9 +46,9 @@ public class VagaoCarga extends Vagao {
 		boolean removido = cargas.remove(carga);
 		if (removido) {
 			pesoAtual -= carga.getPeso();
-			System.out.println("Carga " + carga.getDescricao() + " desembarcada do vagão #" + getNumero());
+			System.out.println("Carga " + carga.getDescricao() + " desembarcada do vagão" + getNumero());
 		} else {
-			System.out.println("Carga não encontrada no vagão #" + getNumero());
+			System.out.println("Carga não encontrada no vagão" + getNumero());
 		}
 		return removido;
 	}
@@ -68,7 +68,7 @@ public class VagaoCarga extends Vagao {
 	// Listar: exibe todas as cargas embarcadas
 	@Override
 	public void listarConteudo() {
-		System.out.println("--- Vagão de Carga #" + getNumero() + " ---");
+		System.out.println("--- Vagão de Carga" + getNumero() + " ---");
 		if (cargas.isEmpty()) {
 			System.out.println("Nenhuma carga embarcada.");
 			return;

@@ -29,7 +29,7 @@ public abstract class Vagao {
 
 	// Exibe status do vagão
 	public void exibirStatus() {
-		System.out.println("Vagão #" + numero + " | Capacidade: " + capacidadeMaxima);
+		System.out.println("Vagão" + numero + " | Capacidade: " + capacidadeMaxima);
 	}
 
 	// Obtém o número do vagão

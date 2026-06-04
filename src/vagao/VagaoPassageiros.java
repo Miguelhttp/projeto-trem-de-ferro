@@ -25,7 +25,7 @@ public class VagaoPassageiros extends Vagao {
 
 		Passageiro passageiro = (Passageiro) item;
 		passageiros.add(passageiro);
-		System.out.println("Passageiro " + passageiro.getNome() + " embarcou no vagão #" + getNumero());
+		System.out.println("Passageiro " + passageiro.getNome() + " embarcou no vagão" + getNumero());
 		return true;
 	}
 
@@ -37,9 +37,9 @@ public class VagaoPassageiros extends Vagao {
 		Passageiro passageiro = (Passageiro) item;
 		boolean removido = passageiros.remove(passageiro);
 		if (removido) {
-			System.out.println("Passageiro " + passageiro.getNome() + " desembarcou do vagão #" + getNumero());
+			System.out.println("Passageiro " + passageiro.getNome() + " desembarcou do vagão" + getNumero());
 		} else {
-			System.out.println("Passageiro não encontrado no vagão #" + getNumero());
+			System.out.println("Passageiro não encontrado no vagão" + getNumero());
 		}
 		return removido;
 	}
@@ -59,7 +59,7 @@ public class VagaoPassageiros extends Vagao {
 	// Listar: exibe todos os passageiros embarcados
 	@Override
 	public void listarConteudo() {
-		System.out.println("--- Vagão de Passageiros #" + getNumero() + " ---");
+		System.out.println("--- Vagão de Passageiros" + getNumero() + " ---");
 		if (passageiros.isEmpty()) {
 			System.out.println("Nenhum passageiro embarcado.");
 			return;
